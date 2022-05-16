@@ -34,7 +34,6 @@ def main(argv = None):
     start_time_total = time.time()
     comments_total = 0
     for iter, youtube_id in enumerate(ids):
-
         try:
             
             if not youtube_id or not output:
@@ -63,6 +62,7 @@ def main(argv = None):
         except Exception as e:
             print('Error:', str(e))
             sys.exit(1)
+    
     print('\nTotal time [{:.2f} seconds]'.format(time.time() - start_time_total))
     print('Total downloaded comments: {}'.format(comments_total))
     print(f'File saved to {output}')
