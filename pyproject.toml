@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "youtube_comments_clustering"
+version = "0.1.0"
+description = ""
+authors = ["Mikhail Kostin <1bitt2@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dateparser = "^1.1.1"
+requests = "^2.27.1"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+download = "src.youtube_comments_clustering.scrap_comments:main"
